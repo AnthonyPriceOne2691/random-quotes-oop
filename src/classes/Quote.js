@@ -14,4 +14,4 @@ class Quote {
   }
 }
 
-export default Quote;
+export { Quote };
