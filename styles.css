@@ -10,6 +10,10 @@ body {
   color: #fff;
 }
 
+#quote {
+  width: 650px;
+}
+
 .btn {
   padding: 10px 20px;
   margin: 20px 30px;
@@ -50,7 +54,7 @@ body {
 .quote {
   font-style: italic;
   font-size: 1.3em;
-  min-height: 2.3em;
+  min-height: 2.5em;
 }
 
 .favorites-container {
