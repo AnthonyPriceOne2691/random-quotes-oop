@@ -9,13 +9,17 @@ class RandomQuote {
     return new Quote(id, text, author);
   }
 
-  static getRandomQuoteViaAPI() {
+  static async getRandomQuoteViaAPI() {
     const url = 'https://api.quotable.io/random';
+    const options = { headers: { 'Content-Type': 'application/json' } };
 
-    return fetch(url, { headers: { 'Content-Type': 'application/json' } })
-      .then((response) => response.json())
-      .then((quote) => new Quote(quote._id, quote.content, quote.author))
-      .catch((error) => console.log(error));
+    try {
+      const response = await fetch(url, options);
+      const quote = await response.json();
+      return new Quote(quote._id, quote.content, quote.author);
+    } catch (error) {
+      return console.log(error);
+    }
   }
 }
 
