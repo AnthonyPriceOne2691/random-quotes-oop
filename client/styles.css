@@ -4,19 +4,15 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 750px;
   margin: 50px auto;
   text-align: center;
   color: #fff;
 }
 
-#quote {
-  width: 650px;
-}
-
 .btn {
   padding: 10px 20px;
-  margin: 20px 30px;
+  margin: 20px 20px;
   font-size: 16px;
   color: #fff;
   border: none;
@@ -40,6 +36,15 @@ body {
   background-color: darkgreen;
 }
 
+.btn-ternary {
+  background-color: orange;
+  color: black;
+}
+
+.btn-ternary:hover {
+  background-color: rgb(186, 102, 0);
+}
+
 .btn-danger {
   background-color: transparent;
   color: #f00;
@@ -54,7 +59,7 @@ body {
 .quote {
   font-style: italic;
   font-size: 1.3em;
-  min-height: 2.5em;
+  min-height: 3.5em;
 }
 
 .favorites-container {
